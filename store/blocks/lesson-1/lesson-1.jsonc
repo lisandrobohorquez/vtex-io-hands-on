@@ -1,0 +1,156 @@
+{
+    "rich-text#title-our-values": {
+        "props": {
+            "text": "# Nuestros valores",
+            "title": "title-our-values"
+        }
+    },
+    "rich-text#our-values-list": {
+        "props": {
+            "text": "\n - Perseguimos el WOW de nuestros clientes \n - Perseguimos el aprendizaje y el crecimiento \n - Somos apasionados y disciplinados \n - Somos un equipo \n - Somos orientados a resultados",
+            "title": "list-our-values"
+        }
+    },
+
+    "flex-layout.row#main-row": {
+        "children": ["flex-layout.col#main-col"],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "title": "main-row"
+        }
+    },
+    "flex-layout.col#main-col": {
+        "children": ["flex-layout.row#deals"],
+        "props": {
+            "title": "main-col"
+        }
+    },
+    "flex-layout.row#deals": {
+        "children": ["flex-layout.col#deal-1", "flex-layout.col#deal-2", "flex-layout.col#deal-3"],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "horizontalAlign": "center",
+            "title": "row-deals"
+        }
+    },
+    // columna 1
+    "flex-layout.col#deal-1": {
+        "children": ["flex-layout.row#deal-1"],
+        "props": {
+            "width": "20%",
+            "title": "col-deal-1"
+        }
+    },
+    "flex-layout.row#deal-1": {
+        "children": ["flex-layout.col#deal-1-col-1", "flex-layout.col#deal-1-col-2"],
+        "props": {
+            "title": "row-deal-1"
+        }
+    },
+    "flex-layout.col#deal-1-col-1": {
+        "children": ["image#deal-1"],
+        "props": {
+            "title": "col-img-deal-1"
+        }
+    },
+    "image#deal-1": {
+        "props": {
+            "src": "https://plchldr.co/i/40x50?&bg=ff0000%20&fc=fff",
+            "title": "img-deal-1"
+        }
+    },
+    "flex-layout.col#deal-1-col-2": {
+        "children": ["rich-text#text-deal-1"],
+        "props": {
+            "title": "deal-1-col-2"
+        }
+    },
+    "rich-text#text-deal-1": {
+        "props": {
+            "text": "Entregas en \n **45 min**",
+            "title": "text-deal-1"
+        }
+    },
+
+    // columna 2
+    "flex-layout.col#deal-2": {
+        "children": ["flex-layout.row#deal-2"],
+        "props": {
+            "width": "20%",
+            "title": "col-deal-2"
+        }
+    },
+    "flex-layout.row#deal-2": {
+        "children": ["flex-layout.col#deal-2-col-1", "flex-layout.col#deal-2-col-2"],
+        "props": {
+            "title": "row-deal-2"
+        }
+    },
+    "flex-layout.col#deal-2-col-1": {
+        "children": ["image#deal-2"],
+        "props": {
+            "title": "col-deal-2-col-1"
+        }
+    },
+    "image#deal-2": {
+        "props": {
+            "src": "https://plchldr.co/i/40x50?&bg=ff0000%20&fc=fff",
+            "title": "img-deal-2"
+        }
+    },
+    "flex-layout.col#deal-2-col-2": {
+        "children": ["rich-text#text-deal-2"],
+        "props": {
+            "title": "col-deal-2-col-2"
+        }
+        
+    },
+    "rich-text#text-deal-2": {
+        "props": {
+            "text": "Compra **fácil** \n **y segura**",
+            "title": "text-deal-2"
+        }
+    },
+
+    // columna 3
+    "flex-layout.col#deal-3": {
+        "children": ["flex-layout.row#deal-3"],
+        "props": {
+            "width": "20%",
+            "title": "col-deal-3"
+        }
+    },
+    "flex-layout.row#deal-3": {
+        "children": ["flex-layout.col#deal-3-col-1", "flex-layout.col#deal-3-col-2"],
+        "props": {
+            "title": "row-deal-3"
+        }
+    },
+    "flex-layout.col#deal-3-col-1": {
+        "children": ["image#deal-3"],
+        "props": {
+            "title": "col-deal-3-col-1"
+        }
+    },
+    "image#deal-3": {
+        "props": {
+            "src": "https://plchldr.co/i/40x50?&bg=ff0000%20&fc=fff",
+            "title": "img-deal-3"
+        }
+    },
+    "flex-layout.col#deal-3-col-2": {
+        "children": ["rich-text#text-deal-3"],
+        "props": {
+            "title": "col-deal-3-col-2"
+        }
+    },
+    "rich-text#text-deal-3": {
+        "props": {
+            "text": "Mejores \n precios y \n **ofertas**",
+            "title": "text-deal-3"
+        }
+    }
+
+    
+}
