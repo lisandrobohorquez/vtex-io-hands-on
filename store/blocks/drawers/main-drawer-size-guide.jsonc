@@ -1,0 +1,40 @@
+{
+    "drawer#main-menu": {
+        "children": [
+            // Espacio para incluir los bloques que quiera mostrar
+        ],
+        "blocks": [
+            "drawer-trigger"
+        ],
+        "props": {
+            "title": "drawer-size-guide",
+            "maxWidth": "100%",
+            "width": "100%"
+        }
+    },
+    "drawer-trigger": {
+        "children": [
+            "flex-layout.row#row-trigger"
+        ]
+    },
+    "flex-layout.row#row-trigger": {
+        "children": ["image#arrow-main-trigger", "rich-text#open-drawer-size-guide"],
+        "props": {
+            "title": "row-trigger"
+        }
+    },
+    "image#arrow-main-trigger": {
+        "props": {
+            "src": "https://i.imgur.com/r1VYUKc.png",
+            "maxWidth": "20px",
+            "maxHeight": "20px",
+            "title": "arrow-main-trigger"
+        }
+    },
+    "rich-text#open-drawer-size-guide": {
+        "props": {
+            "text": "GUÍA DE TALLAS",
+            "title": "title-size-guide"
+        }
+    }
+}
