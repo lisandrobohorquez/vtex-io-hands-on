@@ -1,7 +1,6 @@
 {
     "store.home": {
         "blocks": ["rich-text#title-our-values", 
-            "rich-text#our-values-list", 
-            "flex-layout.row#main-row"]
+            "rich-text#our-values-list"]
     } 
 }
