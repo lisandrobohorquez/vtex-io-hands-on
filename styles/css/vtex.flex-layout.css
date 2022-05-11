@@ -1,0 +1,13 @@
+@media (max-width: 639px) {
+    .flexRowContent--inner-row {
+        display: flex;
+    }
+
+    .flexRowContent--inner-row .stretchChildrenWidth:first-child {
+        width: 15% !important;
+    }
+
+    .flexRowContent--inner-row .stretchChildrenWidth:last-child {
+        width: 85% !important;
+    }
+}

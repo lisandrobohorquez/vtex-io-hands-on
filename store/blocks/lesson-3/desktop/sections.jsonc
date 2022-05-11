@@ -1,0 +1,324 @@
+{
+    "responsive-layout.desktop#desktop-version": {
+        "children": ["flex-layout.row#main-row-desktop"],
+        "props": {
+            "title": "layout-desktop"
+        }
+    },
+    "flex-layout.row#main-row-desktop":
+    {
+        "children": ["flex-layout.col#main-col-1", "flex-layout.col#main-col-2"],
+        "props": {
+            "title": "main-row-desktop"
+        }
+    },
+    // main column 1
+    "flex-layout.col#main-col-1": {
+        "children": ["image#main-img"],
+        "props": {
+            "width": "50%",
+            "title": "main-col-1"
+        }
+    },
+    "image#main-img": {
+        "props": {
+            "src": "https://i.imgur.com/ipQipBB.jpg",
+            "title": "main-img"
+        }
+    },
+    // columna 2 
+    "flex-layout.col#main-col-2": {
+        "children": ["rich-text#main-title", "rich-text#description", "flex-layout.row#row-1-info", "flex-layout.row#row-2-info"],
+        "props": {
+            "width": "50%",
+            "title": "main-col-2"
+        }
+    },
+    // titulo
+    "rich-text#main-title": {
+        "props": {
+            "text": "## Pavo dorado relleno al horno",
+            "textAlignment": "LEFT",
+            "title": "main-title"
+        }
+    },
+    // descripcion
+    "rich-text#description": {
+        "props": {
+            "text": "Delicioso y sencillo de preparar, pavo al horno relleno de verduras con jamón serrano para celebrar en navidad con toda la familia",
+            "textAlignment": "LEFT",
+            "title": "description"
+        }
+    },
+
+    // fila 1
+    "flex-layout.row#row-1-info": {
+        "children": ["flex-layout.col#col-time", "flex-layout.col#col-ingredients", "flex-layout.col#col-level"],
+        "props": {
+            "title": "row-1-info"
+        }
+    },
+
+    // columna time
+    "flex-layout.col#col-time": {
+        "children": ["flex-layout.row#inner-row-1-col-time"],
+        "props": {
+            "title": "col-time"
+        }
+    },
+    "flex-layout.row#inner-row-1-col-time": {
+        "children": ["flex-layout.col#inner-col-1-time-img", "flex-layout.col#inner-col-time-text"],
+        "props": {
+            "title": "inner-row-1-col-time",
+            "blockClass": "inner-row"
+        }
+    },
+    "flex-layout.col#inner-col-1-time-img": {
+        "children": ["image#time"],
+        "props": {
+            "width": "20%",
+            "title": "inner-col-1-time-img",
+            "blockClass": "inner-img-col"
+        }
+    },
+    "image#time": {
+        "props": {
+            "src": "https://i.imgur.com/RWj3DiZ.png",
+            "title": "img-time"
+        }
+    },
+    "flex-layout.col#inner-col-time-text": {
+        "children": ["rich-text#text-time"],
+        "props": {
+            "width": "80%",
+            "title": "inner-col-time-text",
+            "blockClass": "prueba-col-text"
+        }
+    },
+    "rich-text#text-time": {
+        "props": {
+            "text": "60 minutos",
+            "title": "text-time"
+        }
+    },
+
+    // columna ingredients
+    "flex-layout.col#col-ingredients": {
+        "children": ["flex-layout.row#inner-row-1-col-ingredients"],
+        "props": {
+            "title": "col-ingredients"
+        }
+    },
+    "flex-layout.row#inner-row-1-col-ingredients": {
+        "children": ["flex-layout.col#inner-col-1-ingredients-img", "flex-layout.col#inner-col-ingredients-text"],
+        "props": {
+            "title": "inner-row-1-col-ingredients",
+            "blockClass": "inner-row"
+        }
+    },
+    "flex-layout.col#inner-col-1-ingredients-img": {
+        "children": ["image#ingredients"],
+        "props": {
+            "width": "20%",
+            "title": "inner-col-1-ingredients-img"
+        }
+    },
+    "image#ingredients": {
+        "props": {
+            "src": "https://i.imgur.com/YU224Ni.png",
+            "title": "img-ingredients"
+        }
+    },
+    "flex-layout.col#inner-col-ingredients-text": {
+        "children": ["rich-text#text-ingredients"],
+        "props": {
+            "width": "80%",
+            "title": "inner-col-ingredients-text"
+        }
+    },
+    "rich-text#text-ingredients": {
+        "props": {
+            "text": "8 ingredientes",
+            "title": "text-time"
+        }
+    },
+    
+
+
+
+    // columna level
+    "flex-layout.col#col-level": {
+        "children": ["flex-layout.row#inner-row-1-col-level"],
+        "props": {
+            "title": "col-level"
+        }
+    },
+    "flex-layout.row#inner-row-1-col-level": {
+        "children": ["flex-layout.col#inner-col-1-level-img", "flex-layout.col#inner-col-level-text"],
+        "props": {
+            "title": "inner-row-1-col-level",
+            "blockClass": "inner-row"
+        }
+    },
+    "flex-layout.col#inner-col-1-level-img": {
+        "children": ["image#level"],
+        "props": {
+            "width": "20%",
+            "title": "inner-col-1-level-img"
+        }
+    },
+    "image#level": {
+        "props": {
+            "src": "https://imgur.com/EvjGjXS.png",
+            "title": "img-level"
+        }
+    },
+    "flex-layout.col#inner-col-level-text": {
+        "children": ["rich-text#text-level"],
+        "props": {
+            "width": "80%",
+            "title": "inner-col-level-text"
+        }
+    },
+    "rich-text#text-level": {
+        "props": {
+            "text": "Nivel: Principiante",
+            "title": "text-level"
+        }
+    },
+
+
+
+
+    // fila 2
+    "flex-layout.row#row-2-info": {
+        "children": ["flex-layout.col#col-portions", "flex-layout.col#col-sales", "flex-layout.col#col-location"],
+        "props": {
+            "title": "row-1-info"
+        }
+    },
+    // columna portions
+    "flex-layout.col#col-portions": {
+        "children": ["flex-layout.row#inner-row-1-col-portions"],
+        "props": {
+            "title": "col-portions"
+        }
+    },
+    "flex-layout.row#inner-row-1-col-portions": {
+        "children": ["flex-layout.col#inner-col-1-portions-img", "flex-layout.col#inner-col-portions-text"],
+        "props": {
+            "title": "inner-row-1-col-portions",
+            "blockClass": "inner-row"
+        }
+    },
+    "flex-layout.col#inner-col-1-portions-img": {
+        "children": ["image#portions"],
+        "props": {
+            "width": "20%",
+            "title": "inner-col-1-portions-img"
+        }
+    },
+    "image#portions": {
+        "props": {
+            "src": "https://imgur.com/9V8uyXo.png",
+            "title": "img-portions"
+        }
+    },
+    "flex-layout.col#inner-col-portions-text": {
+        "children": ["rich-text#text-portions"],
+        "props": {
+            "width": "80%",
+            "title": "inner-col-portions-text"
+        }
+    },
+    "rich-text#text-portions": {
+        "props": {
+            "text": "4 a 6 comensales",
+            "title": "text-portions"
+        }
+    },
+
+    // columna sales
+    "flex-layout.col#col-sales": {
+        "children": ["flex-layout.row#inner-row-1-col-sales"],
+        "props": {
+            "title": "col-sales"
+        }
+    },
+    "flex-layout.row#inner-row-1-col-sales": {
+        "children": ["flex-layout.col#inner-col-1-sales-img", "flex-layout.col#inner-col-sales-text"],
+        "props": {
+            "title": "inner-row-1-col-sales",
+            "blockClass": "inner-row"
+        }
+    },
+    "flex-layout.col#inner-col-1-sales-img": {
+        "children": ["image#sales"],
+        "props": {
+            "width": "20%",
+            "title": "inner-col-1-sales-img"
+        }
+    },
+    "image#sales": {
+        "props": {
+            "src": "https://i.imgur.com/xx4LO0k.png",
+            "title": "img-sales"
+        }
+    },
+    "flex-layout.col#inner-col-sales-text": {
+        "children": ["rich-text#text-sales"],
+        "props": {
+            "width": "80%",
+            "title": "inner-col-sales-text"
+        }
+    },
+    "rich-text#text-sales": {
+        "props": {
+            "text": "S/1200 – S/1480",
+            "title": "text-sales"
+        }
+    },
+    // columna location
+    "flex-layout.col#col-location": {
+        "children": ["flex-layout.row#inner-row-1-col-location"],
+        "props": {
+            "title": "col-location"
+        }
+    },
+    "flex-layout.row#inner-row-1-col-location": {
+        "children": ["flex-layout.col#inner-col-1-location-img", "flex-layout.col#inner-col-location-text"],
+        "props": {
+            "title": "inner-row-1-col-location",
+            "blockClass": "inner-row"
+        }
+    },
+    "flex-layout.col#inner-col-1-location-img": {
+        "children": ["image#location"],
+        "props": {
+            "width": "20%",
+            "title": "inner-col-1-location-img"
+        }
+    },
+    "image#location": {
+        "props": {
+            "src": "https://i.imgur.com/IhKo5Rc.png",
+            "title": "img-location"
+        }
+    },
+    "flex-layout.col#inner-col-location-text": {
+        "children": ["rich-text#text-location"],
+        "props": {
+            "width": "80%",
+            "title": "inner-col-location-text"
+        }
+    },
+    "rich-text#text-location": {
+        "props": {
+            "text": "País: Perú",
+            "title": "text-location"
+        }
+    }
+
+
+
+}
