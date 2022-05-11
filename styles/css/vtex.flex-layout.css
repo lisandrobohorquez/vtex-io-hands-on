@@ -1,0 +1,6 @@
+@media (max-width: 639px) {
+    .flexRowContent--row-container-content {
+        display: flex;
+        justify-content: center;
+    }
+}

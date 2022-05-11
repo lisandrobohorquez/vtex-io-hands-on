@@ -1,13 +1,35 @@
 {
-    "flex-layout.row#deals": {
-        "children": ["flex-layout.col#deal-1", "flex-layout.col#deal-2", "flex-layout.col#deal-3", 
-            "flex-layout.col#deal-4", "flex-layout.col#deal-5"],
+    "flex-layout.row#promises": {
+        "children": ["slider-layout#promises-slider"],
         "props": {
             "preserveLayoutOnMobile": true,
             "horizontalAlign": "center",
             "title": "row-deals"
         }
     },
+    "slider-layout#promises-slider": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 1
+          },
+          "infinite": true,
+        //   "autoplay": {
+        //     "timeout": 5000,
+        //     "stopOnHover": true
+        //   },
+          "showNavigationArrows": "mobileOnly",
+          "showPaginationDots": "never",
+          "centerMode": {
+            "desktop": "disabled",
+            "tablet": "to-the-left",
+            "phone": "disabled"
+          }
+        },
+        "children": ["flex-layout.col#deal-1", "flex-layout.col#deal-2", "flex-layout.col#deal-3", 
+            "flex-layout.col#deal-4", "flex-layout.col#deal-5"]
+      },
     
     // columna 1
     "flex-layout.col#deal-1": {
@@ -20,7 +42,8 @@
     "flex-layout.row#deal-1": {
         "children": ["image#deal-1", "rich-text#text-deal-1"],
         "props": {
-            "title": "row-deal-1"
+            "title": "row-deal-1",
+            "blockClass":"row-container-content"
         }
     },
     "image#deal-1": {
@@ -153,10 +176,5 @@
             "title": "text-deal-5"
         }
     }
-
-
-
-
-
 
 }
