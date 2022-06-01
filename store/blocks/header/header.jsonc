@@ -1,0 +1,263 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop"
+      //"header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop"
+      //"header-layout.mobile"
+    ]
+  },
+  
+
+  // Mega menu
+  "header-layout.desktop": {
+    // define a stack-container
+    "children": [
+        "sticky-layout.stack-container#header"
+    ],
+    "props": {
+        "horizontalAlign": "left",
+        "verticalAlign": "middle",
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "fullWidth": true
+    }
+},
+
+"sticky-layout.stack-container#header": {
+  "props": {
+      "position": "top"
+  },
+  "children": [
+      "header-row#desktop-2",
+      "sticky-layout#main-menu"
+  ]
+},
+"sticky-layout#main-menu": {
+  "children": [
+      "header-row#desktop-3"
+  ]
+},
+"search-bar": {
+        "blocks": [
+            
+        ],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "placeholder": "¿Buscas algo en especial?",
+            "maxWidth": "17em",
+            "blockClass": "skp-search-bar-desktop"
+        }
+    }
+    // "autocomplete-result-list.v2#desktop": {
+    //     "blocks": [
+    //         //"product-summary.shelf#skp-search"
+    //     ],
+    //     "props": {
+    //         "__unstableProductOriginVtex": true,
+    //         "productLayout": "HORIZONTAL",
+    //         "maxSuggestedProducts": 3,
+    //         "historyFirst": true,
+    //         "minSearchLength": 3
+    //     }
+    // }
+
+
+
+// "header-layout.desktop": {
+  //   "children": [
+  //     "header-row#1-desktop",
+  //     "header-row#2-desktop",
+  //     "header-row#3-desktop",
+  //     "header-row#4-desktop"
+  //   ]
+  // },
+
+
+
+  // "header-row#1-desktop": {
+  //   "children": [
+  //     "telemarketing"
+  //   ],
+  //   "props": {
+  //     "fullWidth": true
+  //   }
+  // },
+  // "header-row#2-desktop": {
+  //   "children": [
+  //     "header-border",
+  //     "notification.bar#home"
+  //   ],
+  //   "props": {
+  //     "fullWidth": "true"
+  //   }
+  // },
+  // "notification.bar#home": {
+  //   "props": {
+  //     "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+  //   }
+  // },
+  // "header-row#3-desktop": {
+  //   "children": [
+  //     "vtex.menu@2.x:menu#websites",
+  //     "header-spacer"
+  //     //   "vtex.menu@2.x:menu#institutional"
+  //   ],
+  //   "props": {
+  //     "blockClass": "menu-link",
+  //     "inverted": "false"
+  //   }
+  // },
+  // "header-row#4-desktop": {
+  //   "props": {
+  //     "blockClass": "main-header",
+  //     "horizontalAlign": "center",
+  //     "verticalAlign": "center",
+  //     "preventHorizontalStretch": true,
+  //     "preventVerticalStretch": true,
+  //     "fullWidth": true
+  //   },
+  //   "children": [
+  //     "header-force-center"
+  //   ]
+  // },
+  // "header-force-center": {
+  //   "children": [
+  //     "logo#desktop"
+  //   ]
+  // },
+  // "logo#desktop": {
+  //   "props": {
+  //     "title": "Logo",
+  //     "href": "/",
+  //     "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+  //     "width": "180"
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#websites": {
+  //   "children": [
+  //     "menu-item#shop"
+  //     //   "menu-item#about-us"
+  //   ]
+  // },
+  // "menu-item#shop": {
+  //   "blocks": [
+  //     "vtex.menu@2.x:submenu#shop"
+  //   ], // Defining a submenu
+  //   "props": {
+  //     "id": "menu-item-shop",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Shop",
+  //       "text": "Shop"
+  //     },
+  //     "iconProps": {
+  //       "id": "bnd-logo",
+  //       "size": 16,
+  //       "viewBox": "0 0 16 16",
+  //       "activeClassName": "rebel-pink",
+  //       "mutedClassName": "c-action-primary"
+  //     },
+  //     "iconToTheRight": true
+  //   }
+  // },
+  // "vtex.menu@2.x:submenu#shop": {
+  //   "children": [
+  //     "vtex.menu@2.x:menu#submenushop"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#submenushop": {
+  //   "children": []
+  // },
+  // // ***** MOBILE *****
+  // "header-layout.mobile": {
+  //   "children": [
+  //     // tablet
+  //     "responsive-layout.mobile#header-mobile",
+  //     // telefono
+  //     "responsive-layout.phone#header-phone"
+  //   ]
+  // },
+  // "responsive-layout.mobile#header-mobile": {
+  //   // se llaman los componentes de mobile
+  //   "children": [
+  //     // row banner mobile
+  //     "header-row#header-mobile-1",
+  //     // row logo y minicart mobile
+  //     "header-row#header-tablet-3",
+  //     "header-row#header-tablet-4"
+  //   ],
+  //   "props": {
+  //     "horizontalAlign": "left",
+  //     "verticalAlign": "middle",
+  //     "preventHorizontalStretch": true,
+  //     "preventVerticalStretch": true,
+  //     "fullWidth": true
+  //   }
+  // },
+  // "header-row#header-mobile-1": {
+  //   "children": [
+  //     "flex-layout.row#top-bar"
+  //   ],
+  //   "props": {
+  //     "fullWidth": true
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#header-menu-phone": {
+  //   "props": {
+  //     "experimentalOptimizeRendering": true,
+  //     "orientation": "vertical",
+  //     "blockClass": "skp-header-menu-phone"
+  //   },
+  //   // incluye login mobile row
+  //   "children": [
+  //     "flex-layout.row#menu-phone",
+  //     "flex-layout.row#sidebar-drawer"
+  //   ]
+  // },
+  // "flex-layout.row#menu-phone": {
+  //   "children": [
+  //     "flex-layout.row#item-menu-phone-departamentos"
+  //   ],
+  //   "props": {
+  //     "orientation": "vertical"
+  //   }
+  // },
+  // "flex-layout.row#item-menu-phone-departamentos": {
+  //   "children": [
+  //     "vtex.menu@2.x:menu#main-menu-mobile"
+  //   ]
+  // },
+  // "vtex.menu@2.x:menu#main-menu-mobile": {
+  //   "props": {
+  //     "orientation": "vertical"
+  //   },
+  //   "children": [
+  //     "menu-item#dpto-1-mobile"
+  //   ]
+  // },
+  // "menu-item#dpto-1-mobile": {
+  //   "props": {
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/nuevos",
+  //       "noFollow": false,
+  //       "text": "NUEVOS"
+  //     },
+  //     "blockClass": [
+  //       "skp-menu-item-mobile",
+  //       "skp-red-color"
+  //     ]
+  //   }
+  // }
+}

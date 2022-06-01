@@ -1,0 +1,22 @@
+{
+    "header-row#desktop-2": {
+        "children": [
+            //"flex-layout.row#top-bar"
+        ],
+        "props": {
+            "fullWidth": true
+        }
+    },
+    "header-row#desktop-3": {
+        "children": [
+            "logo#desktop",
+            "vtex.menu@2.x:menu#menu-desktop-3"
+            // "search-bar",
+            // "flex-layout.row#icons-container"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "skp-desktop-3"
+        }
+    }
+}

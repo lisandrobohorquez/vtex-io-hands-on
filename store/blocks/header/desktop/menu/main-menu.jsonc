@@ -1,0 +1,70 @@
+{
+    "vtex.menu@2.x:menu#menu-desktop-3": {
+        "children": ["menu-item#nuevos", "menu-item#mujer"],
+        //, "menu-item#hombre", "menu-item#sales"],
+        "props": {
+            "blockClass": "skp-menu-desktop"
+        }
+    },
+    "menu-item#nuevos": {
+        "props": {
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/enlace01",
+                "noFollow": false,
+                "tagTitle": "Enlace 01",
+                "text": "Enlace 01"
+            },
+            "blockClass": ["skp-main-menu-desk-item"]
+        }
+    },
+    // 1. --> Option in main menu
+    "menu-item#mujer": {
+        "props": {
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+                "type": "internal",
+                "href": "/enlace02",
+                "noFollow": false,
+                "tagTitle": "Enlace 02",
+                "text": "Enlace 02"
+            },
+            "blockClass": "skp-main-menu-desk-item"
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#submenu-ver-mujer"]
+    }
+
+    // "menu-item#hombre": {
+    //     "props": {
+    //         "type": "custom",
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "type": "internal",
+    //             "href": "/hombre",
+    //             "noFollow": false,
+    //             "tagTitle": "HOMBRE",
+    //             "text": "HOMBRE"
+    //         },
+    //         "blockClass": "skp-main-menu-desk-item"
+    //     },
+    //     "blocks": ["vtex.menu@2.x:submenu#submenu-ver-hombre"]
+    // },
+    // "menu-item#sales": {
+    //     "props": {
+    //         "type": "custom",
+    //         "highlight": false,
+    //         "itemProps": {
+    //             "type": "internal",
+    //             "href": "/sales",
+    //             "noFollow": false,
+    //             "tagTitle": "SALES",
+    //             "text": "SALES"
+    //         },
+    //         "blockClass": "skp-main-menu-desk-item"
+    //     }
+    // }
+    
+}
